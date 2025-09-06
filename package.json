@@ -5,14 +5,14 @@
   "author": "ritz078 <rkritesh078@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev:inspect": "NODE_OPTIONS=\"--inspect\" next dev",
+    "dev:inspect": "NODE_OPTIONS=\"--inspect --openssl-legacy-provider\" next dev",
     "dev": "NODE_OPTIONS=\"--openssl-legacy-provider\" next dev",
     "start": "NODE_OPTIONS=\"--openssl-legacy-provider\" next start",
     "format": "prettier --write '**/*.ts' '**/*.tsx'",
     "build": "NODE_OPTIONS=\"--openssl-legacy-provider\" next build",
     "now-build": "NODE_OPTIONS=\"--openssl-legacy-provider\" next build",
     "postinstall": "patch-package",
-    "build:analyze": "NODE_OPTIONS=\"--openssl-legacy-provider\" ANALYZE=true yarn build"
+    "build:analyze": "ANALYZE=true yarn build"
   },
   "engines": {
     "node": "22.x"

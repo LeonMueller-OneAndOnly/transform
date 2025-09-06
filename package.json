@@ -5,12 +5,12 @@
   "author": "ritz078 <rkritesh078@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev:inspect": "NODE_OPTIONS=\"--inspect --openssl-legacy-provider\" next dev",
-    "dev": "NODE_OPTIONS=\"--openssl-legacy-provider\" next dev",
-    "start": "NODE_OPTIONS=\"--openssl-legacy-provider\" next start",
+    "dev:inspect": "NODE_OPTIONS=\"--inspect\" next dev",
+    "dev": "next dev",
+    "start": "next start",
     "format": "prettier --write '**/*.ts' '**/*.tsx'",
-    "build": "NODE_OPTIONS=\"--openssl-legacy-provider\" next build",
-    "now-build": "NODE_OPTIONS=\"--openssl-legacy-provider\" next build",
+    "build": "next build",
+    "now-build": "next build",
     "postinstall": "patch-package",
     "build:analyze": "ANALYZE=true yarn build"
   },
